@@ -2,6 +2,8 @@ $(document).ready(function() {
     
 });
 
+calculandoResposta = false;
+
 var candidatos = {
     "Boulos": [
         0,
@@ -245,6 +247,10 @@ var afinidade = {
 var perguntaAtual = -1;
 
 function calcularResposta(pergunta, resposta) {
+    if(calculandoResposta)
+        return true;
+
+    calculandoResposta = true;
     for (const index in candidatos) {
         let candidato = candidatos[index];
         if(resposta === 0.5 || candidato[pergunta] === 0.5) {
@@ -411,7 +417,9 @@ function mostrarProximaPergunta() {
     });
 
     $(".escolhas").fadeOut(function() {
-        $(".escolhas").fadeIn();
+        $(".escolhas").fadeIn(function(){
+            calculandoResposta = false;
+        });
     });
 
     $("h2").fadeOut(function() {
