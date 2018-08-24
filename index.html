@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="">
+    
+    <div class="container">
+        <div class="loading">
+            <span class="numero">0/23</span>
+            <div class="barra"></div>
+        </div>
+        <h2 class="categoria"></h2>
+        <div class="conteudo">
+            <p class="texto">Teste de afinidade política</p>
+            <a href="javascript:void(0)" class=" escolha js-comecar" style="margin: auto">Começar</a>
+            <div class="escolhas" style="display: none">
+                <a class="escolha js-sim" href="javascript:void(0)">
+                    Sim
+                </a>
+                <a class="escolha js-depende" href="javascript:void(0)">
+                    Depende
+                </a>
+                <a class="escolha js-nao" href="javascript:void(0)">
+                    Não
+                </a>
+            </div>
+            <div class="chart">
+                
+            </div>
+        </div>
+    </div>
+    <div class="item-default">
+            <img class="foto" src="" alt="">
+            <div class="loading-candidato">
+                <span class="nome"></span>
+                <div class="candidato-barra"></div>
+            </div>
+            <span class="porcentagem"></span>
+        </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/hogan.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

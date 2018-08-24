@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 25px;
+    transition: all 200ms ease-in-out;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.loading {
+    width: 100%;
+    display: block;
+    position: relative;
+    border-radius: 25px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.8);
+    z-index: 1;
+}
+.loading .barra {
+    width: 0%;
+    background-color: #ccc;
+    z-index: -1;
+    content: "";
+    transition: all 200ms ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 25px;
+}
+.loading .numero {
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.conteudo {
+    display: block;
+    width: 100%;
+}
+.texto {
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+    height: 180px;
+    padding: 0;
+}
+.escolhas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.escolha {
+    display: block;
+    width: 60%;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 2px;
+    color: #000;
+    text-decoration: none;
+}
+
+body.economia {
+    background-color: #d5bcd7;
+}
+body.economia .loading .barra {
+    background-color: #e9dfea;
+}
+body.economia h2 {
+    transition: all 200ms ease-in-out;
+    color: #843f8f;
+}
+
+body.energia {
+    background-color: #cbe0c2;
+}
+body.energia .loading .barra {
+    background-color: #e3eee0;
+}
+body.energia h2 {
+    color: #42ac48;
+}
+
+body.protecao-social {
+    background-color: #a5d6e8;
+}
+body.protecao-social .loading .barra {
+    background-color: #c1e7f5;
+}
+body.protecao-social h2 {
+    color: #5dbee3;
+}
+
+body.seguranca {
+    background-color: #e3c4b6;
+}
+body.seguranca .loading .barra {
+    background-color: #f8e4db;
+}
+body.seguranca h2 {
+    color: #bd1e25;
+}
+
+body.educacao {
+    background-color: #ecd093;
+}
+body.educacao .loading .barra {
+    background-color: #f7e4bb;
+}
+body.educacao h2 {
+    color: #c49a12;
+}
+
+.chart {
+    display: block;
+    width: 100%;
+}
+.chart .item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+} 
+
+.foto {
+    width: 50px;
+}
+
+.loading-candidato {
+    width: 100%;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.loading-candidato {
+    width: 100%;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+    text-align: center;
+    overflow: hidden;
+    background-color: #e9dfea;
+    z-index: 1;
+}
+.loading-candidato .candidato-barra {
+    width: 40%;
+    background-color: #d5bcd7;
+    z-index: -1;
+    content: "";
+    transition: all 200ms ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 30px;
+}
+.loading-candidato .nome {
+    padding: 5px 0;
+    display: block;
+    text-align: center;
+}
+.item-default {
+    display: none;
+}
